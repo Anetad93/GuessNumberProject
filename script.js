@@ -47,3 +47,13 @@ const newGame = () => {
 document.querySelector('.check').addEventListener('click', checkValue);
 document.querySelector('.again').addEventListener('click', newGame);
 
+const modal = document.querySelector('.modal');
+
+document.querySelector('.info').addEventListener('click', function() {
+  modal.classList.remove('hidden');
+});
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+  modal.classList.add('hidden');
+});
+

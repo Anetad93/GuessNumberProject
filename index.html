@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
-  </head>
-  <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <label>
-          <input type="number" class="guess" />
-        </label>
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <link rel='stylesheet' href='style.css' />
+  <title>Guess My Number!</title>
+</head>
+<body>
+<header>
+  <h1>Guess My Number!</h1>
+  <p class='between'>(Between 1 and 20)</p>
+  <div class='buttonBox'>
+    <button class='btn again'>Again!</button>
+    <button class='btn info'>Info!</button>
+  </div>
+  <div class='number'>?</div>
+</header>
+<main>
+  <section class='left'>
+    <label>
+      <input type='number' class='guess' />
+    </label>
+    <button class='btn check'>Check!</button>
+  </section>
+  <section class='right'>
+    <p class='message'>Start guessing...</p>
+    <p class='label-score'>💯 Score: <span class='score'>20</span></p>
+    <p class='label-highscore'>
+      🥇 Highscore: <span class='highscore'>0</span>
+    </p>
+  </section>
+  <div class='modal hidden'>
+    <button class='close-modal'>X</button>
+    <h2>Game rules</h2>
+    <p>Proin eu tempor dolor, sed hendrerit justo. Curabitur ac pretium dui.</p>
+    <p>Vestibulum accumsan dui ligula, aliquet hendrerit neque posuere a.</p>
+    <p>Nam vestibulum non turpis a auctor.</p>
+    <p>Donec congue porta erat, eget sagittis metus imperdiet id. Pellentesque hendrerit mollis tellus, eu auctor lorem. Etiam id dui congue erat viverra hendrerit ut sit amet neque.</p>
+  </div>
+</main>
+<script src='script.js'></script>
+</body>
 </html>
